@@ -84,12 +84,14 @@ body {
   flex: 0 0 auto;
 }
 .jb-site .jb-brand-name {
+  display: block;
   font-size: 21px;
   line-height: 1.05;
   font-weight: 950;
   letter-spacing: -0.75px;
 }
 .jb-site .jb-brand-tag {
+  display: block;
   font-size: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -272,6 +274,7 @@ body {
 }
 .jb-site .jb-art {
   position: relative;
+  margin: 0;
   border: 1px solid rgba(227, 255, 200, 0.17);
   border-radius: 24px;
   background: linear-gradient(
@@ -516,6 +519,9 @@ body {
   letter-spacing: 0;
   opacity: 0.8;
 }
+.jb-site .jb-price-custom {
+  font-size: 31px;
+}
 .jb-site .jb-price-card p {
   font-size: 12px;
   line-height: 1.7;
@@ -598,6 +604,10 @@ body {
   font-weight: 850;
   color: #1c5037;
   overflow-wrap: anywhere;
+}
+.jb-site .jb-contact-note {
+  font-size: 13px;
+  color: #597363;
 }
 .jb-site .jb-contact-mini .jb-mini-icon {
   display: inline-grid;
@@ -771,10 +781,13 @@ body {
   gap: 9px;
   font-size: 13px;
 }
-.jb-site .jb-footer-col strong {
+.jb-site .jb-footer-col h3 {
   color: #fff;
   font-size: 13px;
-  margin-bottom: 3px;
+  font-weight: 900;
+  margin: 0 0 3px;
+  line-height: inherit;
+  letter-spacing: inherit;
 }
 .jb-site .jb-footer-col a {
   overflow-wrap: anywhere;

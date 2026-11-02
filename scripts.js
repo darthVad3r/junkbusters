@@ -16,7 +16,7 @@
       email:   "entry.565814158",
       town:    "entry.1784647549",
       type:    "entry.209623664",
-      details: "", // add entry ID if a "details/items" question exists in the form
+      details: "entry.1883368015",
       timing:  "entry.1776900747",
     },
     EMAIL: "mylesfinley81@gmail.com",

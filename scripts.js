@@ -53,8 +53,8 @@
     });
 
     if (form.elements.website.value) {
-      say("Thanks! We'll be in touch.");
       form.reset();
+      say("Thanks! We'll be in touch.");
       return;
     } // bot trap
 
@@ -77,10 +77,10 @@
         body: body,
       })
         .then(function () {
+          form.reset();
           say(
             "Thanks! Your request was sent. We'll reply with an upfront estimate.",
           );
-          form.reset();
         })
         .catch(function () {
           say(

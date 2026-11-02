@@ -112,4 +112,26 @@
       );
     }
   });
+  // Mobile nav toggle
+  var hamburger = document.querySelector('.jb-hamburger');
+  var mainNav = document.querySelector('.jb-nav');
+  if (hamburger && mainNav) {
+    hamburger.addEventListener('click', function () {
+      var isOpen = mainNav.classList.toggle('jb-open');
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    var allNavLinks = mainNav.querySelectorAll('.jb-nav-link, .jb-nav-cta');
+    for (var i = 0; i < allNavLinks.length; i++) {
+      allNavLinks[i].addEventListener('click', function () {
+        mainNav.classList.remove('jb-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    }
+    document.addEventListener('click', function (e) {
+      if (!mainNav.contains(e.target)) {
+        mainNav.classList.remove('jb-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
 })();

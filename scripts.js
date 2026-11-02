@@ -9,15 +9,15 @@
   //     the Google Form's choices exactly.
   // Leave ACTION empty and the form opens the visitor's email app instead.
   var CONFIG = {
-    ACTION: "", // https://docs.google.com/forms/d/e/1FAIpQLSej5MBvX8LgdzPBFSJ7jMf0qSQ5l0LnetZzcSr9eI56jwyXSQ/formResponse
+    ACTION: "https://docs.google.com/forms/d/e/1FAIpQLSeIpDVuVbOKP-DjkppU0GuIQcEO5puWNO6zTS8Zq5eActvZAQ/formResponse",
     FIELDS: {
-      name: "",
-      phone: "",
-      email: "",
-      town: "",
-      type: "",
-      details: "",
-      timing: "",
+      name:    "entry.1054082351",
+      phone:   "entry.1551818844",
+      email:   "entry.565814158",
+      town:    "entry.1784647549",
+      type:    "entry.209623664",
+      details: "", // add entry ID if a "details/items" question exists in the form
+      timing:  "entry.1776900747",
     },
     EMAIL: "mylesfinley81@gmail.com",
   };
